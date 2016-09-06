@@ -153,7 +153,7 @@ namespace RemoveTilesetDuplicates
             if((columns * rows) < tilecount)
             {
                 MessageBox.Show("Error: Export image size too small.");
-                return null;
+                return new Bitmap(finalWidth,finalHeight);
             }
 
             Bitmap final = new Bitmap(finalWidth, finalHeight);
